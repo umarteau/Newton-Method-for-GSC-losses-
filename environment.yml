@@ -3,3 +3,6 @@ dependencies:
   - numpy
   - matplotlib
   - scipy
+  - torch
+  - psutil
+  - time
