@@ -7,3 +7,4 @@ dependencies:
   - psutil
   - time
   - importlib
+  - pandas
