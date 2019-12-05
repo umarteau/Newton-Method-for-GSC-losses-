@@ -533,7 +533,20 @@ def computeMemorySimple(kernel,d,n,m,freeGPU,freeDoubles):
     return fKnmP
 
 
-
+def KnmPtest(kernel,X,C,memToUse,useGPU):
+    n = X.size(0)
+    m = C.size(0)
+    freeDoubles = memToUse/8. - 3*m*m - 4*n - 4*m
+    if useGPU:
+        y = torch.zeros(m)
+        y = y.to('cuda')
+        del y
+        freeGPU = 0.95*gm.freeGPU()/8
+    else:
+        freeGPU = None
+    return(lambda u : KnmProdSimple(X,C,u,kernel,freeDoubles,freeGPU))
+    
+       
 
 
 
