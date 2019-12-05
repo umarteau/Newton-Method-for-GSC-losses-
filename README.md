@@ -6,5 +6,18 @@ This repository provides the code used to run the experiments of the paper "Glob
 
 ## Installation on Linux/mac
 
-The file env
+The file env contains all dependencies needed to run the code in the python
 
+
+
+## Algorithm
+
+The necessary scripts to run the second order method are located in the file 
+
+
+```python
+ddd
+```
+
+
+## Experiments
