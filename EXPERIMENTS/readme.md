@@ -1,4 +1,5 @@
-#Experiments
+
+# Experiments
 
 
 For all these experiments, one needs to download the data set and place it in the [DATASETS](https://github.com/umarteau/Newton-Method-for-GSC-losses-/tree/master/DATASETS) folder. 
