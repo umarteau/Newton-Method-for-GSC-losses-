@@ -110,7 +110,7 @@ To test the predictor learned above on the test set `Xtst`, `Ytst`, we compute l
 
 #Computing the prediction with our model 
 
-KnmTs = dp.KnmPtest(kern,Xtst,C,memToUse,useGPU)
+KnmTs = display.KnmPtest(kern,Xtst,C,memToUse,useGPU)
 Ypred = KnmPTs(alpha)
 
 #Test Loss
